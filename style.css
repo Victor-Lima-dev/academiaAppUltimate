@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --cor__header: blue;
+    --cor__botao: yellow;
+
+    --borda: 1px solid red;
+    --border-radius: 5rem;
+
+}
+
+/*Estilos gerais*/
+a
+{
+    text-decoration: none;
+    display: block;
+    
+}
+
+li
+{
+    list-style: none;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*height: 100vh;*/
+}
+
+
+.conteudo-corpo
+{
+    height: 40rem;
+    border: 1px solid blue;
+    width: 25rem;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.conteudo-corpo + .conteudo-corpo
+{
+    margin: 1rem 0rem;
+}
+
+.conteudo-corpo__header
+{
+    padding: 1rem 0;
+    text-align: center;
+    background: var(--cor__header);
+    flex: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-corpo__main
+{
+    flex: 80%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    border: var(--borda);
+}
+
+.conteudo-corpo__botao
+{
+    border: var(--borda);
+    width: 10rem;
+    padding: 1rem;
+    margin: 0 .5rem;
+    text-align: center;
+    background-color: var(--cor__botao);
+    flex: 1;
+    
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+}
+
+/*Form*/
+
+.form
+{
+    border: var(--borda);
+    padding: 2rem;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.form__caixa
+{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.form__label
+{
+    margin-bottom: .5rem;
+}
+
+.conteudo-corpo__agrupamento
+{
+    border: var(--borda);
+  
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-corpo__lista
+{
+    border: var(--borda);
+    width: 10rem;
+    height: 10rem;
+
+    margin: 1rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
